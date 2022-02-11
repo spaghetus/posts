@@ -1,3 +1,4 @@
+post to test the wolog shell script
 # about the wolog
 
 the wolog is generated from a git repository using a shell script
