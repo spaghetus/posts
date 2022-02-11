@@ -6,6 +6,6 @@ do
 	echo $i
 	cp $i ../content/posts
 	NAME=$(basename $i)
-	DATE=$(git blame test-post.gmi | cut -d ' ' -f 4 | tac | head -n 1)
+	DATE=$(git blame $i | cut -d ' ' -f 4 | tac | head -n 1)
 	echo "=> /posts/$NAME $DATE ${NAME%.gmi}" >> ../content/feed.gmi
 done
