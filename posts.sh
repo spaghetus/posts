@@ -5,7 +5,7 @@ do
 	echo $i
 	echo $i | tail -n +1 > ../content/posts/$(basename $i)
 	NAME=$(basename $i)
-	TITLE=$(echo $i | head -n 1)
+	TITLE=$(cat $i | head -n 1)
 	DATE=$(git blame $i | cut -d ' ' -f 4 | tac | head -n 1)
 	echo "=> /posts/$NAME $DATE $TITLE" >> ../content/feed.gmi
 done
