@@ -1,4 +1,3 @@
-#!bash
 git pull origin main
 cat ../content/feed.template.gmi > ../content/feed.gmi
 for i in $(ls -t *.gmi)
