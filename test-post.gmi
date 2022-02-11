@@ -1,0 +1,5 @@
+# about the wolog
+
+the wolog is generated from this repository using a shell script
+
+this post will help me figure out how to get that shell script to work :)
